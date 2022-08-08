@@ -3,6 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyparser = require("body-parser");
 const cors = require("cors");
+const Test = require("./models/test");
 const app = express();
 
 // database connection
@@ -11,19 +12,6 @@ mongoose.connect(
   { useNewUrlParser: true },
   () => console.log("MongoDB connection successful!")
 );
-
-// create DB schema
-const redesignS = new mongoose.Schema({
-  item: String,
-});
-
-const Stuff = mongoose.model("Stuff", redesignS);
-const itemOne = Stuff({
-  item: "testing"
-}).save(function (err) {
-  if (err) throw err;
-  console.log("item saved");
-});
 
 // second database ( if necessary )
 
@@ -34,6 +22,28 @@ app.use(cors());
 // ----------------------------------- endpoints -------------------------- //
 app.get("/", function (req, res) {
   res.send("Hello World");
+});
+
+app.get("/testdata", function (req, res) {
+  Test.find({}, function (err, data) {
+    if (err) throw err;
+    res.send(data);
+  });
+});
+
+// testing post
+app.post("/newdata", async (req, res) => {
+  const post = new Test({
+    title: req.body.title,
+  });
+
+  try {
+    const savedPost = await post.save();
+    res.json(savedPost);
+  } catch (err) {
+    res.json({ message: err });
+    console.log(err);
+  }
 });
 
 // port
