@@ -1,0 +1,44 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  grid-template-columns: 58px auto 240px;
+  display: grid;
+  /* background-color: #333; */
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-family: neue-haas-unica,sans-serif;
+    font-weight: 800;
+    font-size: .9375rem;
+    text-transform: uppercase;
+    padding: 4px 7px;
+    display: inline-block;
+    color: #000;
+    white-space: nowrap;
+  display: flex;
+  /* color: white; */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+  color: white;
+}
+
+.header-secondary-nav-logo {
+  display: flex;
+}
+
+.navLinks {
+  margin-left: 400px;
+}
+
+/*Search bar */
