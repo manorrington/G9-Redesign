@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
+// import { Link } from "react-router-dom" 
 import Axios from "axios";
 
 function Testing() {
@@ -21,8 +22,11 @@ function Testing() {
           return (
             <div className="footer">
               <img src={val.img} alt="test" />
+              {/* <Link to={`/images/${val.img}`}> */}
+              {/* <img src='/images/bestseller1.png' alt="test" /> */}
+              {/* </Link> */}
               <h3 className="name">{val.title}</h3>
-              <h3 className="price">{val.artist}</h3>
+              <h3 className="price">{val.description}</h3>
               <h3>${val.price}</h3>
             </div>
           );

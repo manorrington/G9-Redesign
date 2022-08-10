@@ -13,6 +13,7 @@ See the License for the specific language governing permissions and limitations 
 const mongoose = require("mongoose");
 const cors = require("cors");
 const Test = require("./models/test");
+const Test2 = require("./models/test2");
 const express = require('express')
 const bodyParser = require('body-parser')
 const awsServerlessExpressMiddleware = require('aws-serverless-express/middleware')
@@ -53,11 +54,39 @@ app.get("/testdata", function (req, res) {
   });
 });
 
+app.get("/testdata2", function (req, res) {
+  Test2.find({}, function (err, data) {
+    if (err) throw err;
+    res.send(data);
+  });
+});
+
 // testing post
 app.post("/newdata", async (req, res) => {
   const post = new Test({
+    img: req.body.img,
+    title: req.body.title,
+    description: req.body.description,
+    price: req.body.price
+  });
+
+  
+
+  try {
+    const savedPost = await post.save();
+    res.json(savedPost);
+  } catch (err) {
+    res.json({ message: err });
+    console.log(err);
+  }
+});
+
+app.post("/newdata2", async (req, res) => {
+  const post = new Test2({
     title: req.body.title,
   });
+
+  
 
   try {
     const savedPost = await post.save();
