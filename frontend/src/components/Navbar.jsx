@@ -53,13 +53,15 @@ export default function Navbar() {
         </li>
         <li>
           <a href="#about">Shop</a>
+
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#sports">Sports</a>
         </li>
         
         <li>
           <a href="#search">&#x1F50E;&#xFE0E;</a>
+
         </li>
       </div>
     </nav>
