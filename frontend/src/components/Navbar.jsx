@@ -44,31 +44,31 @@ export default function Navbar() {
         </i>
       </li>
       <div className="navLinks">
-        <li>
+        <li className="navLink">
           <Link to="/">
             <a href="/">
               Home
             </a>
           </Link>
         </li>
-          <li>
+          <li className="navLink">
         <Link to="/sports">
             <a href="/sports">Sports</a>
         </Link>
           </li>
 
-        <li>
+        <li className="navLink">
           <Link to="/">
           <a href="#about">Shop</a>
           </Link>
         </li>
-        <li>
+        <li className="navLink">
           <Link to="/">
           <a href="#sports">Sports</a>
           </Link>
         </li>
 
-        <li>
+        <li className="navLink">
           <Link to="/">
           <a href="#search">&#x1F50E;&#xFE0E;</a>
           </Link>
