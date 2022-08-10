@@ -86,7 +86,7 @@ export default function HomeFeed() {
         <div className="rightcolumn">
           <div className="card">
             <h2>Top Stories</h2>
-            <div class="w3-display-container w3-text-white">
+            <div className="w3-display-container w3-text-white">
               <img
                 src={require("../../images/uvzct5amalrwq0dpwbxa.webp")}
                 alt="Lights"
@@ -101,7 +101,7 @@ export default function HomeFeed() {
             </p>
           </div>
           <div className="card">
-            <div class="w3-display-container w3-text-white">
+            <div className="w3-display-container w3-text-white">
               <img
                 src={require("../../images/breakfast-club-hosts.jpg")}
                 alt="Lights"
@@ -117,7 +117,7 @@ export default function HomeFeed() {
             </p>
           </div>
           <div className="card">
-            <div class="w3-display-container w3-text-white">
+            <div className="w3-display-container w3-text-white">
               <img
                 src={require("../../images/asenjislzhyhq1diqwjw.webp")}
                 alt="Lights"

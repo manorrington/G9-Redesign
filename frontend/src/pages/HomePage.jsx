@@ -5,7 +5,7 @@ import HomeFeed from "../components/HomeFeed/HomeFeed";
 export default function HomePage() {
     return (
         <>
-        <Navbar />
+        {/* <Navbar /> */}
         <HomeFeed />
         </>
     )

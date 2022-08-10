@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 export default function Navbar() {
@@ -12,10 +13,10 @@ export default function Navbar() {
       <div className="wrapper">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="#">Sports</a>
+            <a href="/sports">Sports</a>
           </li>
           <li>
             <a href="#">Shop</a>
@@ -44,24 +45,33 @@ export default function Navbar() {
       </li>
       <div className="navLinks">
         <li>
-          <a className="active" href="#home">
-            Home
-          </a>
+          <Link to="/">
+            <a href="/">
+              Home
+            </a>
+          </Link>
         </li>
+          <li>
+        <Link to="/sports">
+            <a href="/sports">Sports</a>
+        </Link>
+          </li>
+
         <li>
-          <a href="#news">Sports</a>
-        </li>
-        <li>
+          <Link to="/">
           <a href="#about">Shop</a>
-
+          </Link>
         </li>
         <li>
+          <Link to="/">
           <a href="#sports">Sports</a>
+          </Link>
         </li>
-        
-        <li>
-          <a href="#search">&#x1F50E;&#xFE0E;</a>
 
+        <li>
+          <Link to="/">
+          <a href="#search">&#x1F50E;&#xFE0E;</a>
+          </Link>
         </li>
       </div>
     </nav>
