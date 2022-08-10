@@ -142,7 +142,7 @@ export default function HomeFeed() {
               <a href=""><p><b> Skincare Advisor Michelle Castro Found Her Tribe While Finding Her Regimen</b></p></a>
             </div>
             <div className="fakeimg">
-              <a href=""><p><b> Royce Da 5′9 Reflects on Falling Out With Lupe Fiasco, Says He Doesn’t ‘Feel Good About’ Calling Him ‘a B*tch’</b></p></a>
+              <a href=""><p><b> Royce Da 5′9 Reflects on Falling Out With Lupe Fiasco, Says He Doesn’t ‘Feel Good About’ Calling Him ‘a B*tch’ </b></p></a>
             </div>
           </div>
         </div>
