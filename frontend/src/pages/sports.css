@@ -1,0 +1,18 @@
+.firstHalf {
+    margin-bottom: 15px;
+    width: 88.63%;
+    display: block;
+    
+   
+}
+ 
+.secondHalf {
+    width: 100%;
+}
+
+.text-big {
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: black;
+}

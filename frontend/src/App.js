@@ -1,10 +1,13 @@
-// import logo from './logo.svg';
-import HomePage from './pages/HomePage';
+
+// import HomePage from './pages/HomePage';
 import './App.css';
+import SportsPage from './pages/SportsPage';
+
 
 function App() {
   return (
-    <HomePage />
+    <SportsPage/>
+    
   );
 }
 
