@@ -6,7 +6,7 @@ const SportsPage = () => {
     return ( 
 
     <div>
-        <Navbar />
+        {/* <Navbar /> */}
     <section class="section">  
       <div class = "box-main">
         <div class="firstHalf">
