@@ -34,13 +34,13 @@ export default function Navbar() {
           </a>
         </li>
         <li>
-          <a href="#news">News</a>
+          <a href="#shop">Shop</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#sports">Sports</a>
         </li>
         <li>
-          <a href="#about">Shop</a>
+          <a href="#about">Contact</a>
         </li>
       </div>
       <div>
