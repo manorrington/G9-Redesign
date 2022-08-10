@@ -21,7 +21,7 @@
       "function": {
         "redesign6d0d052b": {
           "deploymentBucketName": "amplify-redesign-dev-181827-deployment",
-          "s3Key": "amplify-builds/redesign6d0d052b-68663861384948714170-build.zip"
+          "s3Key": "amplify-builds/redesign6d0d052b-4232786d6d6e6d417734-build.zip"
         }
       }
     }
