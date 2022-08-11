@@ -7,8 +7,8 @@ export default function HomeFeed() {
   return (
     <>
       <div className="row">
-        <div className="leftcolumn">
-          <div className="card">
+        <div className="mainleftcolumn">
+          <div className="maincard">
             <h2 className="MainHeader">
               Kodak Black Talks Collaborative Relationship With Kendrick Lamar:
               ‘I Appreciate Him for Trusting Me With His Album’
@@ -20,7 +20,6 @@ export default function HomeFeed() {
               className="headImage"
               alt="mainimg"
               src={require("../../images/kodak.webp")}
-              style={{ height: "585px" }}
             />
             <p>
               <em>Photo by Photography Man</em>
@@ -51,7 +50,7 @@ export default function HomeFeed() {
               <a href="*">Read More</a>
             </p>
           </div>
-          <div className="card">
+          <div className="maincard">
             <h2>
               <b>COMPLEX</b> Shows
             </h2>
@@ -84,8 +83,8 @@ export default function HomeFeed() {
             </p>
           </div>
         </div>
-        <div className="rightcolumn">
-          <div className="card">
+        <div className="mainrightcolumn">
+          <div className="maincard">
             <h2>Top Stories</h2>
             <div className="w3-display-container w3-text-white">
               <img
@@ -101,7 +100,7 @@ export default function HomeFeed() {
               </b>
             </p>
           </div>
-          <div className="card">
+          <div className="maincard">
             <div className="w3-display-container w3-text-white">
               <img
                 src={require("../../images/breakfast-club-hosts.jpg")}
@@ -117,7 +116,7 @@ export default function HomeFeed() {
               </b>
             </p>
           </div>
-          <div className="card">
+          <div className="maincard">
             <div className="w3-display-container w3-text-white">
               <img
                 src={require("../../images/asenjislzhyhq1diqwjw.webp")}
@@ -133,7 +132,7 @@ export default function HomeFeed() {
               </b>
             </p>
           </div>
-          <div className="card">
+          <div className="maincard">
             <h3>Popular Articles</h3>
             <div className="fakeimg">
               <a href="*">
