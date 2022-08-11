@@ -1,6 +1,6 @@
 import React from "react";
 import YouTube from "react-youtube";
-import "./Sports.css";
+import "./sports.css";
 
 const SportsPage = () => {
   const opts = {
