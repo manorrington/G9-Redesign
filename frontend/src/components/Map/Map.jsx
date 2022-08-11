@@ -7,7 +7,7 @@ export default function Map() {
            <iframe
         className= "map"
       title="Map"
-        width="1268"
+        // width="800"
         height="738"
         style={{border:"0"}}
         loading="lazy"
