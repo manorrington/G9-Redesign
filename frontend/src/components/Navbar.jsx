@@ -19,7 +19,7 @@ export default function Navbar() {
             <a href="/sports">Sports</a>
           </li>
           <li>
-            <a href="#">Shop</a>
+            <a href="/shop">Shop</a>
           </li>
           <li>
             <a href="#">Contact</a>
@@ -45,33 +45,21 @@ export default function Navbar() {
       </li>
       <div className="navLinks">
         <li className="navLink">
-          <Link to="/">
-            <a href="/">
-              Home
-            </a>
-          </Link>
-        </li>
-          <li className="navLink">
-        <Link to="/sports">
-            <a href="/sports">Sports</a>
-        </Link>
-          </li>
-
-        <li className="navLink">
-          <Link to="/">
-          <a href="#about">Shop</a>
-          </Link>
+          <Link to="/">Home</Link>
         </li>
         <li className="navLink">
-          <Link to="/">
-          <a href="#sports">Sports</a>
-          </Link>
+          <Link to="/sports">Sports</Link>
         </li>
 
         <li className="navLink">
-          <Link to="/">
-          <a href="#search">&#x1F50E;&#xFE0E;</a>
-          </Link>
+          <Link to="/shop">Shop</Link>
+        </li>
+        <li className="navLink">
+          <Link to="/Contact">Contact</Link>
+        </li>
+
+        <li className="navLink">
+          <Link to="#search">&#x1F50E;&#xFE0E;</Link>
         </li>
       </div>
     </nav>
