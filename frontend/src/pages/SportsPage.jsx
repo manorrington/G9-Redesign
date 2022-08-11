@@ -1,11 +1,13 @@
 import React from "react";
 import YouTube from "react-youtube";
 import "./sports.css";
+import "../components/HomeFeed/style.css";
+import "../components/HomeFeed/w3.css";
 
 const SportsPage = () => {
   const opts = {
-    height: "350",
-    width: "640",
+    height: "550",
+    width: "1000",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 1,
@@ -13,31 +15,108 @@ const SportsPage = () => {
   };
   return (
     <div>
-      <br />
-      tyali-branch
-      <section className="section">
-        <div className="box-main">
-          <div className="firstHalf">
-            <h1 className="text-big">
+      <div className="rightcolumn">
+        <div className="card">
+          <h2>Top Stories</h2>
+          <div className="w3-display-container w3-text-white">
+            <img
+              src={require("../images/uvzct5amalrwq0dpwbxa.webp")}
+              alt="Lights"
+              style={{ width: "100%" }}
+            />
+            {/* <div class="w3-display-bottommiddle w3-container"><p>Bottom Middle</p></div> */}
+          </div>
+          <p style={{ fontSize: "25px" }}>
+            <b>
+              Ye, Lil Uzi Vert, and Steve Lacy Show Off New Matching Tattoos{" "}
+            </b>
+          </p>
+        </div>
+        <div className="card">
+          <div className="w3-display-container w3-text-white">
+            <img
+              src={require("../images/breakfast-club-hosts.jpg")}
+              alt="Lights"
+              style={{ width: "100%" }}
+            />
+            {/* <div class="w3-display-bottommiddle w3-container"><p>Bottom Middle</p></div> */}
+          </div>
+          <p style={{ fontSize: "25px" }}>
+            <b>
+              Angela Yee Leaving ‘The Breakfast Club’ to Host Her Own Show,
+              Charlamagne tha God and DJ Envy Will Remain (UPDATE)
+            </b>
+          </p>
+        </div>
+        <div className="card">
+          <div className="w3-display-container w3-text-white">
+            <img
+              src={require("../images/asenjislzhyhq1diqwjw.webp")}
+              alt="Lights"
+              style={{ width: "100%" }}
+            />
+            {/* <div class="w3-display-bottommiddle w3-container"><p>Bottom Middle</p></div> */}
+          </div>
+          <p style={{ fontSize: "25px" }}>
+            <b>
+              Jim Carrey Told The Weeknd He Didn’t Want to Collaborate on ‘Dawn
+              FM’ at First
+            </b>
+          </p>
+        </div>
+        <div className="card">
+          <h3>Popular Articles</h3>
+          <div className="fakeimg">
+            <a href="*">
+              <p>
+                <b>
+                  Fans Share Their Favorite ‘Breakfast Club’ Memories Amid Word
+                  of Angela Yee Leaving Show
+                </b>
+              </p>
+            </a>
+          </div>
+          <div className="fakeimg">
+            <a href="">
+              <p>
+                <b>
+                  {" "}
+                  Skincare Advisor Michelle Castro Found Her Tribe While Finding
+                  Her Regimen
+                </b>
+              </p>
+            </a>
+          </div>
+          <div className="fakeimg">
+            <a href="">
+              <p>
+                <b>
+                  {" "}
+                  Royce Da 5′9 Reflects on Falling Out With Lupe Fiasco, Says He
+                  Doesn’t ‘Feel Good About’ Calling Him ‘a B*tch’{" "}
+                </b>
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <section className="row">
+        <div className="leftcolumn">
+          <div className="card">
+            <h1 className="MainHeader">
               Trevon Diggs on His Critics: ‘They Don’t Know What They’re Talking
               About’
             </h1>
-            <div className="author-img">
-              <img
-                src="https://images.complex.com/complex/image/upload/t_author_pic/Df3AZWSUYAAIfJx_q7ygok.jpg"
-                alt="Kameron Hay"
-              />
-            </div>
+
             <div className="author-name">
-              <span className="type">By Kameron Hay</span>
+              <b>SPORTS</b> |{" "}
+              <a href="https://twitter.com/Kameron_Hay">
+                <span className="type">By Kameron Hay</span>
+              </a>
+              <time className="datetime">Aug 10,2022</time>
             </div>
-            <div className="author-bio">
-              <p>
-                Just a writer from St. Louis/Twitter/
-                <a href="https://twitter.com/Kameron_Hay">@Kameron_Hay</a>
-              </p>
-            </div>
-            <time className="datetime">Aug 10,2022</time>
+            <div className="author-bio"></div>
+
             <div className="header-img">
               <img
                 src="https://images.complex.com/complex/images/c_crop,h_2214,w_3936,x_0,y_60/c_fill,dpr_auto,f_auto,q_auto,w_1400/fl_lossy,pg_1/adu8d5e9lq7ws074npcv/trevon-diggs-nfl?fimg-ssr-default"
@@ -124,10 +203,6 @@ const SportsPage = () => {
               Brian Windhorst's update on Kevin Durant's trade demands & the
               Brooklyn Nets' future | Get Up
             </h1>
-            <YouTube
-              videoId="yT8czc1SvYY"
-              opts={opts} /*onReady={this._onReady}*/
-            />
           </div>
         </div>
       </section>
@@ -149,7 +224,13 @@ const SportsPage = () => {
       <section className="section">
         <div className="box-main">
           <div className="thirdHalf">
-            <h1>Complex Shows</h1>
+            <div className="youtube-video">
+              <h1 className="video-header">Complex Shows</h1>
+              <YouTube
+                videoId="yT8czc1SvYY"
+                opts={opts} /*onReady={this._onReady}*/
+              />
+            </div>
           </div>
         </div>
       </section>
