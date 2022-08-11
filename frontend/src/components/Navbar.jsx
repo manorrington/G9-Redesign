@@ -22,7 +22,7 @@ export default function Navbar() {
             <a href="/shop">Shop</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="/contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -55,11 +55,11 @@ export default function Navbar() {
           <Link to="/shop">Shop</Link>
         </li>
         <li className="navLink">
-          <Link to="/Contact">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </li>
 
         <li className="navLink">
-          <Link to="#search">&#x1F50E;&#xFE0E;</Link>
+        <input className="navInput" type="text" name="search" placeholder="Search.."/>
         </li>
       </div>
     </nav>
