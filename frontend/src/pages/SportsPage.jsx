@@ -1,16 +1,16 @@
 import React from "react";
-// import YouTube from "react-youtube";
-import "./Sports.css";
+import YouTube from "react-youtube";
+import "./sports.css";
 
 const SportsPage = () => {
-  // const opts = {
-  //   height: "350",
-  //   width: "640",
-  //   playerVars: {
-  //     // https://developers.google.com/youtube/player_parameters
-  //     autoplay: 1,
-  //   },
-  // };
+  const opts = {
+     height: "350",
+     width: "640",
+     playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+       autoplay: 1,
+     },
+   };
   return (
     <div>
       <br />
@@ -124,6 +124,7 @@ const SportsPage = () => {
               Brian Windhorst's update on Kevin Durant's trade demands & the
               Brooklyn Nets' future | Get Up
             </h1>
+            <YouTube videoId="yT8czc1SvYY" opts={opts} /*onReady={this._onReady}*/ />
           </div>
         </div>
       </section>
