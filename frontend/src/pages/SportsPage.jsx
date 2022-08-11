@@ -1,6 +1,6 @@
 import React from "react";
 import YouTube from "react-youtube";
-import "./Sports.css";
+import "./sports.css";
 
 const SportsPage = () => {
   const opts = {
@@ -8,7 +8,7 @@ const SportsPage = () => {
     width: "640",
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
-      autoplay: 1,
+      autoplay: 0,
     },
   };
   return (
