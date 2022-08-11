@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import ContactScreen from "./pages/ContactPage";
 import "./App.css";
 import SportsPage from "./pages/SportsPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
