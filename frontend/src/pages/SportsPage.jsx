@@ -4,6 +4,7 @@ import "./sports.css";
 import "../components/HomeFeed/style.css";
 import "../components/HomeFeed/w3.css";
 
+
 const SportsPage = () => {
   const opts = {
     height: "550",

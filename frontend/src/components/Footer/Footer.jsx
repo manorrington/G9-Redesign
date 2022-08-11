@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import "./Footer.css";
 
 export default function Footer() {
@@ -47,23 +49,23 @@ export default function Footer() {
             <div className="col-md-4 col-sm-6 col-xs-12">
               <ul className="social-icons">
                 <li>
-                  <a className="facebook" href="#">
-                    <i className="fa fa-facebook"></i>
+                  <a className="facebook" target={"__blank"} href="https://www.facebook.com/complex">
+                  <FontAwesomeIcon icon={faFacebook} />
                   </a>
                 </li>
                 <li>
-                  <a className="twitter" href="#">
-                    <i className="fa fa-twitter"></i>
+                  <a className="twitter" target={"__blank"} href="https://twitter.com/Complex">
+                  <FontAwesomeIcon icon={faTwitter} />
                   </a>
                 </li>
                 <li>
-                  <a className="dribbble" href="#">
-                    <i className="fa fa-dribbble"></i>
+                  <a className="instagram" target={"__blank"} href="https://www.instagram.com/complex/">
+                  <FontAwesomeIcon icon={faInstagram} />
                   </a>
                 </li>
                 <li>
-                  <a className="linkedin" href="#">
-                    <i className="fa fa-linkedin"></i>
+                  <a className="youtube" target={"__blank"} href="https://www.youtube.com/complex">
+                  <FontAwesomeIcon icon={faYoutube} />
                   </a>
                 </li>
               </ul>
