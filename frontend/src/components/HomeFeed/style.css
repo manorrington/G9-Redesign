@@ -42,7 +42,7 @@
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {   
+.leftcolumn {
   float: left;
   width: 75%;
 }
@@ -85,15 +85,13 @@
 
 .slides {
   display: flex;
-  
+
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  
-  
-  
+
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  
+
   /*
   scroll-snap-points-x: repeat(300px);
   scroll-snap-type: mandatory;
@@ -122,15 +120,15 @@
   transform: scale(1);
   transition: transform 0.5s;
   position: relative;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 100px;
 }
-.slides > div:target {
-/*   transform: scale(0.8); */
-}
+/* .slides > div:target {
+ transform: scale(0.8); 
+} */
 .author-info {
   background: rgba(0, 0, 0, 0.75);
   color: white;
@@ -175,7 +173,8 @@
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
+  .leftcolumn,
+  .rightcolumn {
     width: 100%;
     padding: 0;
   }
