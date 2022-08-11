@@ -49,8 +49,8 @@
   text-align: right;
 }
 .site-footer .social-icons a {
-  width: 40px;
-  height: 40px;
+  /* width: 40px;
+  height: 40px; */
   line-height: 40px;
   margin-left: 6px;
   margin-right: 0;
@@ -94,9 +94,9 @@
   background-color: #eceeef;
   color: #818a91;
   font-size: 16px;
-  display: inline-block;
+  /* display: inline-block; */
   line-height: 44px;
-  width: 44px;
+  width: 48px;
   height: 44px;
   text-align: center;
   margin-right: 8px;
@@ -123,11 +123,11 @@
 .social-icons a.twitter:hover {
   background-color: #00aced;
 }
-.social-icons a.linkedin:hover {
-  background-color: #007bb6;
+.social-icons a.instagram:hover {
+  background-color: #b60055;
 }
-.social-icons a.dribbble:hover {
-  background-color: #ea4c89;
+.social-icons a.youtube:hover {
+  background-color: #f50000;
 }
 @media (max-width: 767px) {
   .social-icons li.title {
