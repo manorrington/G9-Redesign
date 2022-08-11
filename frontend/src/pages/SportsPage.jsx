@@ -226,14 +226,19 @@ const SportsPage = () => {
           <div className="thirdHalf">
             <div className="youtube-video">
               <h1 className="video-header">Complex Shows</h1>
-              <YouTube
-                videoId="yT8czc1SvYY"
-                opts={opts} /*onReady={this._onReady}*/
-              />
+              <div className="yt-video">
+                <YouTube
+                  videoId="yT8czc1SvYY"
+                  opts={opts} /*onReady={this._onReady}*/
+                />
+              </div>
+              <br></br>
             </div>
           </div>
         </div>
       </section>
+
+      <hr className="line"></hr>
     </div>
   );
 };
