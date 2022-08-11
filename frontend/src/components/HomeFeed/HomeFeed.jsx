@@ -60,9 +60,9 @@ export default function HomeFeed() {
               height="585px"
               src="https://www.youtube.com/embed/LOPASETBvN4"
               title="Should Kanye Be Mad at Adidas? How Should Sneakers Fit? | The Complex Sneakers Podcast"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
             <p>
               <b>Watch our podcast!</b>
@@ -77,9 +77,10 @@ export default function HomeFeed() {
               the latest in the Zadeh Kicks sneaker reselling saga. Also, Welty
               influences Rihanna’s sneakers, Joe has some more dyed pairs coming
               up, and Brendan goes golfing.
-              <p>
-                Looking for the Complex Sneakers
-              Podcast Dad Hats? Shop on <a href="*">Complex Shop</a>  now!</p> 
+            </p>
+            <p>
+              Looking for the Complex Sneakers Podcast Dad Hats? Shop on{" "}
+              <a href="*">Complex Shop</a> now!
             </p>
           </div>
         </div>
@@ -135,14 +136,36 @@ export default function HomeFeed() {
           <div className="card">
             <h3>Popular Articles</h3>
             <div className="fakeimg">
-              <a href="*"><p><b>Fans Share Their Favorite ‘Breakfast Club’ Memories Amid Word of Angela Yee Leaving Show</b></p></a>
-              
+              <a href="*">
+                <p>
+                  <b>
+                    Fans Share Their Favorite ‘Breakfast Club’ Memories Amid
+                    Word of Angela Yee Leaving Show
+                  </b>
+                </p>
+              </a>
             </div>
             <div className="fakeimg">
-              <a href=""><p><b> Skincare Advisor Michelle Castro Found Her Tribe While Finding Her Regimen</b></p></a>
+              <a href="">
+                <p>
+                  <b>
+                    {" "}
+                    Skincare Advisor Michelle Castro Found Her Tribe While
+                    Finding Her Regimen
+                  </b>
+                </p>
+              </a>
             </div>
             <div className="fakeimg">
-              <a href=""><p><b> Royce Da 5′9 Reflects on Falling Out With Lupe Fiasco, Says He Doesn’t ‘Feel Good About’ Calling Him ‘a B*tch’ </b></p></a>
+              <a href="">
+                <p>
+                  <b>
+                    {" "}
+                    Royce Da 5′9 Reflects on Falling Out With Lupe Fiasco, Says
+                    He Doesn’t ‘Feel Good About’ Calling Him ‘a B*tch’{" "}
+                  </b>
+                </p>
+              </a>
             </div>
           </div>
         </div>

@@ -1,0 +1,24 @@
+.slideImg {
+  width: 100%;
+  height: auto;
+}
+.slideImg:hover {
+  filter: saturate(1.4);
+}
+.slider-container {
+  width: 50%;
+  position: relative;
+  margin: 0 auto;
+  z-index: 0;
+}
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: auto;
+}
+
+.slides {
+  z-index: 1;
+}

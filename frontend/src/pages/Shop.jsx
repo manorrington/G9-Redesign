@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import Axios from "axios";
+import Slider from "../components/Slider/Slider";
 
 function Shop() {
   const [productList, setProductList] = useState([]);
@@ -12,14 +13,13 @@ function Shop() {
     });
   }, []);
 
-
-
-  return(
+  return (
     <>
+      <Slider />
       <div className="product-card-container">
-        {productList.map((val) => {
+        {productList.map((val, i) => {
           return (
-            <div className="footer">
+            <div key={i} className="footer">
               <img src={val.img} alt="test" />
               <h3 className="name">{val.title}</h3>
               <h3 className="price">{val.description}</h3>
@@ -28,7 +28,7 @@ function Shop() {
           );
         })}
       </div>
-  </>
+    </>
   );
 }
 

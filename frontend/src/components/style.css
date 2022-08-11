@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 5px;
   box-sizing: border-box;
 }
@@ -8,7 +9,7 @@ nav {
   list-style-type: none;
   margin-left: 20px;
   padding: 0px 80px 0px 80px;
-  /* overflow: hidden; */
+  overflow: hidden;
   display: flex;
   /* flex-wrap: wrap; */
   /* justify-content: center;
@@ -24,14 +25,14 @@ li {
 }
 
 li a {
-  font-family: neue-haas-unica,sans-serif;
-    font-weight: 800;
-    font-size: .9375rem;
-    text-transform: uppercase;
-    padding: 4px 7px;
-    display: inline-block;
-    color: #000;
-    white-space: nowrap;
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 800;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  padding: 4px 7px;
+  display: inline-block;
+  color: #000;
+  white-space: nowrap;
   display: flex;
   /* color: white; */
   text-align: center;
@@ -45,9 +46,9 @@ li a:hover {
   color: white;
 }
 
-.header-secondary-nav-logo {
-  /* display: flex; */
-}
+/* .header-secondary-nav-logo {
+  display: flex; 
+} */
 .header-bar__menu {
   height: 34px;
   width: 65px;
@@ -62,7 +63,7 @@ li a:hover {
 
 .navLinks {
   /* height: 40px; */
-   margin-left: 700px;
+  margin-left: 700px;
   /* margin-right: 100px; */
   flex: 0 0 40%;
   justify-content: center;
@@ -70,7 +71,7 @@ li a:hover {
   /* background-color: rgb(165, 165, 165); */
 }
 
-.wrapper{
+.wrapper {
   position: fixed;
   top: 0;
   /*left: -100%;*/
@@ -80,17 +81,18 @@ li a:hover {
   background: #000;
   /*background: linear-gradient(90deg, #f92c78, #4114a1);*/
   /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
- /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
+  /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
   transition: all 0.6s ease-in-out;
+  z-index: 2;
 }
-#active:checked ~ .wrapper{
+#active:checked ~ .wrapper {
   /*left: 0;*/
-  right:0;
+  right: 0;
 }
 
-.menu-btn{
+.menu-btn {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   /* right: 20px; */
   left: 20px;
   top: 20px;
@@ -104,49 +106,48 @@ li a:hover {
   /*color: #fff;*/
   /*background: linear-gradient(90deg, #f92c78, #4114a1);*/
   /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
- /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
+  /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
   transition: all 0.3s ease-in-out;
 }
 .menu-btn span,
 .menu-btn:before,
-.menu-btn:after{
-	content: "";
-	position: absolute;
-	top: calc(50% - 1px);
-	left: 30%;
-	width: 40%;
-	border-bottom: 2px solid #000;
-	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+.menu-btn:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 30%;
+  width: 40%;
+  border-bottom: 2px solid #000;
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.menu-btn:before{
+.menu-btn:before {
   transform: translateY(-8px);
 }
-.menu-btn:after{
+.menu-btn:after {
   transform: translateY(8px);
 }
 
-
 .close {
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	pointer-events: none;
-	transition: background .6s;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: background 0.6s;
 }
 
 /* closing animation */
 #active:checked + .menu-btn span {
-	transform: scaleX(0);
+  transform: scaleX(0);
 }
 #active:checked + .menu-btn:before {
-	transform: rotate(45deg);
+  transform: rotate(45deg);
   border-color: #fff;
 }
 #active:checked + .menu-btn:after {
-	transform: rotate(-45deg);
+  transform: rotate(-45deg);
   border-color: #fff;
 }
-.wrapper ul{
+.wrapper ul {
   position: absolute;
   top: 60%;
   left: 50%;
@@ -155,11 +156,11 @@ li a:hover {
   list-style: none;
   text-align: center;
 }
-.wrapper ul li{
+.wrapper ul li {
   height: 10%;
   margin: 15px 0;
 }
-.wrapper ul li a{
+.wrapper ul li a {
   text-decoration: none;
   font-size: 30px;
   font-weight: 500;
@@ -171,13 +172,13 @@ li a:hover {
   margin: 5px 30px;
   opacity: 0;
   transition: all 0.3s ease;
-  transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.wrapper ul li a:after{
+.wrapper ul li a:after {
   position: absolute;
   content: "";
   background: #fff;
-   /*background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);*/
+  /*background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);*/
   /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
   width: 100%;
   height: 100%;
@@ -188,16 +189,16 @@ li a:hover {
   z-index: -1;
   transition: transform 0.3s ease;
 }
-.wrapper ul li a:hover:after{
+.wrapper ul li a:hover:after {
   transform: scaleY(1);
 }
-.wrapper ul li a:hover{
+.wrapper ul li a:hover {
   color: black;
 }
-input[type="checkbox"]{
+input[type="checkbox"] {
   display: none;
 }
-.content{
+.content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -207,26 +208,26 @@ input[type="checkbox"]{
   width: 100%;
   color: #202020;
 }
-.content .title{
+.content .title {
   font-size: 40px;
   font-weight: 700;
 }
-.content p{
+.content p {
   font-size: 35px;
   font-weight: 600;
 }
 
-#active:checked ~ .wrapper ul li a{
+#active:checked ~ .wrapper ul li a {
   opacity: 1;
 }
-.wrapper ul li a{
+.wrapper ul li a {
   transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   transform: translateX(100px);
 }
-#active:checked ~ .wrapper ul li a{
-	transform: none;
-	transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1); /* easeOutBackを緩めた感じ */
-   transition-delay: .6s;
+#active:checked ~ .wrapper ul li a {
+  transform: none;
+  transition-timing-function: ease, cubic-bezier(0.1, 1.3, 0.3, 1); /* easeOutBackを緩めた感じ */
+  transition-delay: 0.6s;
   transform: translateX(-100px);
 }
 
