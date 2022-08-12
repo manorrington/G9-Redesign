@@ -120,6 +120,11 @@ figcaption {
   font-size: 30px;
   color: black;
 }
+.more-header {
+  font-size: 2em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
 /* Youtube video */
 .video-header {
   color: white;
@@ -136,9 +141,14 @@ figcaption {
 .yt-video {
   margin: 0 auto;
 }
+
 hr {
+  border: 0.5px lightgray solid;
+}
+.more-header-line {
   border: 2px black solid;
 }
+
 @media only screen and (min-width: 520px) {
   .author-name,
   .datetime {
