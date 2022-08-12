@@ -29,7 +29,7 @@ const ContactScreen = () => {
           <div className="contact-box">
             <div className="left"> </div>
             <div className="right">
-              <h2>Contact Us</h2>
+              <h2 className="contact-h2">Contact Us</h2>
               <label>Name</label>
               <input
                 type="text"
