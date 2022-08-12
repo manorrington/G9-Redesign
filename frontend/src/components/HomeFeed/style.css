@@ -16,7 +16,9 @@
 }
 
 .headImage {
-  width: 1040px;
+  height: "585px";
+  width: fit-content;
+  background-repeat: no-repeat;
 }
 /* Style the top navigation bar */
 .topnav {
@@ -42,13 +44,13 @@
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {
+.mainleftcolumn {
   float: left;
   width: 75%;
 }
 
 /* Right column */
-.rightcolumn {
+.mainrightcolumn {
   float: left;
   width: 25%;
   background-color: #ffffff;
@@ -63,8 +65,8 @@
   padding: 20px;
 }
 
-/* Add a card effect for articles */
-.card {
+/* Add a maincard effect for articles */
+.maincard {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
@@ -171,19 +173,42 @@
   background: #000;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn,
-  .rightcolumn {
+/* Responsive layout */
+@media screen and (max-width: 1430px) {
+  .headImage {
+    width: 800px;
+    height: 360px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .headImage {
+    width: 500px;
+    height: 360px;
+  }
+  .mainleftcolumn,
+  .mainrightcolumn {
     width: 100%;
+    float: none;
     padding: 0;
   }
 }
+@media screen and (max-width: 567px) {
+  .maincard {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 535px) {
+  .headImage {
+    width: 400px;
+  }
+}
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
   .topnav a {
     float: none;
     width: 100%;
   }
 }
+
+
+
