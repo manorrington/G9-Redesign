@@ -26,7 +26,7 @@ li {
 
 li a {
   font-family: neue-haas-unica, sans-serif;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 0.9375rem;
   text-transform: uppercase;
   padding: 4px 7px;
@@ -63,11 +63,13 @@ li a:hover {
 
 .navLinks {
   /* height: 40px; */
-  margin-left: 700px;
+  /* margin-left: 700px; */
+  margin: 0 auto;
   /* margin-right: 100px; */
   flex: 0 0 40%;
   justify-content: center;
   display: flex;
+
   /* background-color: rgb(165, 165, 165); */
 }
 
@@ -251,8 +253,48 @@ input[type="checkbox"] {
   width: 170px;
 }
 
-@media screen and (max-width: 1530px) {
+@media screen and (max-width: 900px) {
   .navLink {
     display: none;
   }
+  .social-media-logos {
+    display: none;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .social-media-logos {
+    display: none;
+  }
+}
+
+/* Fontawesome logos in navbar --Jose */
+.social-media-logos {
+  width: 25%;
+  padding-top: 10px;
+}
+.fontawesome-logos {
+  padding: 10px 10px;
+  font-size: 1.4em;
+}
+
+.facebook-icon:hover {
+  color: #4267b2;
+}
+.twitter-icon:hover {
+  color: #1da1f2;
+}
+.instagram-icon:hover {
+  color: #e1306c;
+}
+.youtube-icon:hover {
+  color: #ff0000;
+}
+.snapchat-icon:hover {
+  color: #fffc00;
+}
+.tiktok-icon:hover {
+  color: #00f2ea;
+}
+.twitch-icon:hover {
+  color: #6441a5;
 }

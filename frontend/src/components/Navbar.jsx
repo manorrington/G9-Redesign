@@ -1,6 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faYoutube,
+  faSnapchat,
+  faTiktok,
+  faTwitch,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Navbar() {
   return (
@@ -59,8 +69,67 @@ export default function Navbar() {
         </li>
 
         <li className="navLink">
-        <input className="navInput" type="text" name="search" placeholder="Search.."/>
+          <input
+            className="navInput"
+            type="text"
+            name="search"
+            placeholder="Search.."
+          />
         </li>
+      </div>
+      <div className="social-media-logos">
+        <a
+          className="fontawesome-logos"
+          target={"__blank"}
+          href="https://www.facebook.com/complex"
+        >
+          <FontAwesomeIcon className="facebook-icon" icon={faFacebook} />
+        </a>
+
+        <a
+          className="fontawesome-logos"
+          target={"__blank"}
+          href="https://twitter.com/Complex"
+        >
+          <FontAwesomeIcon className="twitter-icon" icon={faTwitter} />
+        </a>
+
+        <a
+          className="fontawesome-logos"
+          target={"__blank"}
+          href="https://www.instagram.com/complex/"
+        >
+          <FontAwesomeIcon className="instagram-icon" icon={faInstagram} />
+        </a>
+
+        <a
+          className="fontawesome-logos"
+          target={"__blank"}
+          href="https://www.youtube.com/complex"
+        >
+          <FontAwesomeIcon className="youtube-icon" icon={faYoutube} />
+        </a>
+        <a
+          className="fontawesome-logos"
+          target={"__blank"}
+          href="https://www.snapchat.com/complex"
+        >
+          <FontAwesomeIcon className="snapchat-icon" icon={faSnapchat} />
+        </a>
+        <a
+          className="fontawesome-logos"
+          target={"__blank"}
+          href="https://www.tiktok.com/complex"
+        >
+          <FontAwesomeIcon className="tiktok-icon" icon={faTiktok} />
+        </a>
+        <a
+          className="fontawesome-logos"
+          target={"__blank"}
+          href="https://www.twitch.com/complex"
+        >
+          <FontAwesomeIcon className="twitch-icon" icon={faTwitch} />
+        </a>
       </div>
     </nav>
   );

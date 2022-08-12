@@ -5,6 +5,9 @@ import {
   faTwitter,
   faInstagram,
   faYoutube,
+  faSnapchat,
+  faTiktok,
+  faTwitch,
 } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.css";
 
