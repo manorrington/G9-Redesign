@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import Axios from "axios";
+import "./shop.css";
 
 function Shop() {
   const [productList, setProductList] = useState([]);
@@ -12,23 +13,32 @@ function Shop() {
     });
   }, []);
 
-
-
-  return(
-    <>
-      <div className="product-card-container">
-        {productList.map((val) => {
-          return (
-            <div className="footer">
-              <img src={val.img} alt="test" />
-              <h3 className="name">{val.title}</h3>
-              <h3 className="price">{val.description}</h3>
-              <h3>${val.price}</h3>
+  return (
+    <div className="products">
+      {productList.map((val) => {
+        return (
+          <div className="flip-box">
+            <div className="flip-box-inner">
+              <div className="front">
+                <img src={val.img} alt="test" />
+              </div>
+              <div className="back">
+                <h1 className="name">{val.title}</h1>
+                <h2 className="description">{val.description}</h2>
+                <h3 className="price">${val.price}</h3>
+              </div>
             </div>
-          );
-        })}
-      </div>
-  </>
+          </div>
+
+          // <div className="details">
+          //   <img src={val.img} alt="test" />
+          //   <h3 className="name">{val.title}</h3>
+          //   <h3 className="price">{val.description}</h3>
+          //   <h3>${val.price}</h3>
+          // </div>
+        );
+      })}
+    </div>
   );
 }
 
