@@ -43,7 +43,7 @@ export default function Navbar() {
           </svg>
         </i>
       </li>
-      <div className="navLinks">
+      <div className="navLink">
         <li className="navLink">
           <Link to="/">Home</Link>
         </li>
