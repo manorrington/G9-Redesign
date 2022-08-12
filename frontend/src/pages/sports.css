@@ -1,11 +1,11 @@
 html,
 body {
-  margin: 0;
+  margin-top: 5px;
 }
 
 .firstHalf {
   margin-bottom: 15px;
-  width: 88.63%;
+  margin: 0 auto;
   display: block;
 }
 
@@ -106,14 +106,18 @@ figcaption {
 /* Add a card effect for articles */
 .card {
   background-color: white;
-  padding: 20px;
+  padding: 1em;
   margin-top: 20px;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .secondHalf {
   width: 100%;
 }
-
+.optss {
+  margin: 0 auto;
+}
 .text-big {
   font-weight: 500;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -124,6 +128,7 @@ figcaption {
   font-size: 2em;
   font-weight: 900;
   text-transform: uppercase;
+  padding: 0.5em 5em;
 }
 /* Youtube video */
 .video-header {
@@ -133,17 +138,22 @@ figcaption {
   padding: 1em 0;
 }
 .youtube-video {
-  width: 100%;
+  /* width: 100%; */
+
   background-color: black;
   margin: 2em 0;
-  padding: 0 0 2em 5em;
+  /* padding: 0 0 2em 5em; */
+  margin: 0 auto;
 }
 .yt-video {
   margin: 0 auto;
+  height: fit-content;
 }
 
 hr {
   border: 0.5px lightgray solid;
+  width: 80%;
+  margin: 0 auto;
 }
 .more-header-line {
   border: 2px black solid;
@@ -162,5 +172,13 @@ hr {
     padding-right: 30px;
     padding-bottom: 0px;
     padding-left: 30px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .card {
+    width: 100%;
+  }
+  .more-header {
+    padding: 0.5em 1.5em;
   }
 }

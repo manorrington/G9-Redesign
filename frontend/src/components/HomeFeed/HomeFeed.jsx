@@ -85,7 +85,7 @@ export default function HomeFeed() {
         </div>
         <div className="mainrightcolumn">
           <div className="maincard">
-            <h2>Top Stories</h2>
+            <h2 className="top-stories">Top Stories</h2>
             <div className="w3-display-container w3-text-white">
               <img
                 src={require("../../images/uvzct5amalrwq0dpwbxa.webp")}
