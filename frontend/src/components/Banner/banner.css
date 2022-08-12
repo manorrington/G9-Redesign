@@ -1,0 +1,10 @@
+.banner {
+  text-align: center;
+  width: 100%;
+  color: black;
+  height: 64px;
+  text-transform: capitalize;
+}
+.banner h1 {
+  font-size: 1.5rem;
+}

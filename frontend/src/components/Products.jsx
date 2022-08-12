@@ -14,7 +14,7 @@ function Products() {
   }, []);
 
   return (
-    <div>
+    <div className="product-container">
       <div className="products">
         {productList.map((val) => {
           return (
