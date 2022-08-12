@@ -24,35 +24,44 @@ const ContactScreen = () => {
   };
   return (
     <div>
-      <div className="form-box">
-        <form ref={form} onSubmit={sendEmail} /*triggers sendEmail function*/>
-          <label>Name</label>
-          <input
-            type="text"
-            className="form-input"
-            placeholder="name"
-            name="user_name"
-            required
-          />
-          <label>Email</label>
-          <input
-            type="email"
-            className="form-input"
-            placeholder="email"
-            name="user_email"
-            required
-          />
-          <label>Message</label>
-          <input
-            type="text"
-            className="form-input"
-            placeholder="How Can We Help?"
-            name="message"
-            required
-          />
-          <input type="submit" value="Send" />
-        </form>
-      </div>
+      <form ref={form} onSubmit={sendEmail} /*triggers sendEmail function*/>
+        <div className="contact-container">
+          <div className="contact-box">
+            <div className="left"> </div>
+            <div className="right">
+              <h2>Contact Us</h2>
+              <label>Name</label>
+              <input
+                type="text"
+                className="field"
+                placeholder="name"
+                name="user_name"
+                required
+              />
+              <label>Email</label>
+              <input
+                type="email"
+                className="field"
+                placeholder="email"
+                name="user_email"
+                required
+              />
+              <label>Message</label>
+              <input
+                type="text"
+                className="field area"
+                placeholder="How Can We Help?"
+                name="message"
+                required
+              />
+              <button className="btn" type="submit" value="Send">
+                {" "}
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
       <Map />
     </div>
   );
