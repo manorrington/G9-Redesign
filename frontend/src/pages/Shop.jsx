@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Axios from "axios";
 import Slider from "../components/Slider/Slider";
+import Products from "../components/Products";
 
 function Shop() {
   const [productList, setProductList] = useState([]);
@@ -16,7 +17,8 @@ function Shop() {
   return (
     <>
       <Slider />
-      <div className="product-card-container">
+      <Products />
+      {/* <div className="product-card-container">
         {productList.map((val, i) => {
           return (
             <div key={i} className="footer">
@@ -27,7 +29,7 @@ function Shop() {
             </div>
           );
         })}
-      </div>
+      </div> */}
     </>
   );
 }
