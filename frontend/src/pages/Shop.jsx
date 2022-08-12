@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Axios from "axios";
 import Slider from "../components/Slider/Slider";
 import Products from "../components/Products";
+import Banner from "../components/Banner/Banner";
 
 function Shop() {
   const [productList, setProductList] = useState([]);
@@ -16,6 +17,7 @@ function Shop() {
 
   return (
     <>
+      <Banner />
       <Slider />
       <Products />
       {/* <div className="product-card-container">
